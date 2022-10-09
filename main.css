@@ -1,0 +1,457 @@
+@font-face {
+  font-family: "Logo";
+  src: url(./fonts/logo.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url(./fonts/400.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url(./fonts/600.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url(./fonts/700.ttf);
+  font-weight: 700;
+}
+
+:root {
+  --primary: #de5c9d;
+  --white: #ffffff;
+  --black: #111111;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* grid system */
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  padding: 0 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.col-l-0 {
+    display: none;
+}
+.col-l-1 {
+    padding-left: 10px;
+    padding-right: 10px;
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%;
+}
+.col-l-2 {
+    padding-left: 10px;
+    padding-right: 10px;
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+}
+.col-l-3 {
+    padding-left: 10px;
+    padding-right: 10px;
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+.col-l-4 {
+    padding-left: 10px;
+    padding-right: 10px;
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+}
+.col-l-5 {
+    padding-left: 10px;
+    padding-right: 10px;
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%;
+}
+.col-l-6 {
+    padding-left: 10px;
+    padding-right: 10px;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.col-l-7 {
+    padding-left: 10px;
+    padding-right: 10px;
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%;
+}
+.col-l-8 {
+    padding-left: 10px;
+    padding-right: 10px;
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+}
+.col-l-9 {
+    padding-left: 10px;
+    padding-right: 10px;
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+.col-l-10 {
+    padding-left: 10px;
+    padding-right: 10px;
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
+}
+.col-l-11 {
+    padding-left: 10px;
+    padding-right: 10px;
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%;
+}
+
+.col-l-12 {
+    padding-left: 10px;
+    padding-right: 10px;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+@media (min-width: 1024px) and (max-width: 1169px) {
+    .container {
+        width: 984px;
+    }
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .container {
+        width: 644px;
+    }
+    .row {
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+    .col-m-0 {
+        display: none;
+    }
+    .col-m-1 {
+        padding-left: 8px;
+        padding-right: 8px;
+        flex: 0 0 8.33333%;
+        max-width: 8.33333%;
+    }
+    .col-m-2 {
+        padding-left: 8px;
+        padding-right: 8px;
+        flex: 0 0 16.66667%;
+        max-width: 16.66667%;
+    }
+    .col-m-3 {
+        padding-left: 8px;
+        padding-right: 8px;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .col-m-4 {
+        padding-left: 8px;
+        padding-right: 8px;
+        flex: 0 0 33.33333%;
+        max-width: 33.33333;
+    }
+    .col-m-5 {
+        padding-left: 8px;
+        padding-right: 8px;
+        flex: 0 0 41.66667%;
+        max-width: 41.66667%;
+    }
+    .col-m-6 {
+        padding-left: 8px;
+        padding-right: 8px;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .col-m-7 {
+        padding-left: 8px;
+        padding-right: 8px;
+        flex: 0 0 58.33333%;
+        max-width: 58.33333%;
+    }
+    .col-m-8 {
+        padding-left: 8px;
+        padding-right: 8px;
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%;
+    }
+    .col-m-9 {
+        padding-left: 8px;
+        padding-right: 8px;
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    .col-m-10 {
+        padding-left: 8px;
+        padding-right: 8px;
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%;
+    }
+    .col-m-11 {
+        padding-left: 8px;
+        padding-right: 8px;
+        flex: 0 0 91.66667%;
+        max-width: 91.66667%;
+    }
+    
+    .col-m-12 {
+        padding-left: 8px;
+        padding-right: 8px;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 739px) {
+    .container {
+        padding: 0 8px;
+    }
+    .row {
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+    .col-s-0 {
+        display: none;
+    }
+    .col-s-1 {
+        padding-left: 5px;
+        padding-right: 5px;
+        flex: 0 0 8.33333%;
+        max-width: 8.33333%;
+    }
+    .col-s-2 {
+        padding-left: 5px;
+        padding-right: 5px;
+        flex: 0 0 16.66667%;
+        max-width: 16.66667%;
+    }
+    .col-s-3 {
+        padding-left: 5px;
+        padding-right: 5px;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .col-s-4 {
+        padding-left: 5px;
+        padding-right: 5px;
+        flex: 0 0 33.33333%;
+        max-width: 33.33333;
+    }
+    .col-s-5 {
+        padding-left: 5px;
+        padding-right: 5px;
+        flex: 0 0 41.66667%;
+        max-width: 41.66667%;
+    }
+    .col-s-6 {
+        padding-left: 5px;
+        padding-right: 5px;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .col-s-7 {
+        padding-left: 5px;
+        padding-right: 5px;
+        flex: 0 0 58.33333%;
+        max-width: 58.33333%;
+    }
+    .col-s-8 {
+        padding-left: 5px;
+        padding-right: 5px;
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%;
+    }
+    .col-s-9 {
+        padding-left: 5px;
+        padding-right: 5px;
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    .col-s-10 {
+        padding-left: 5px;
+        padding-right: 5px;
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%;
+    }
+    .col-s-11 {
+        padding-left: 5px;
+        padding-right: 5px;
+        flex: 0 0 91.66667%;
+        max-width: 91.66667%;
+    }
+    
+    .col-s-12 {
+        padding-left: 5px;
+        padding-right: 5px;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/* grid system */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans";
+}
+
+header .inner {
+  display: flex;
+  margin-top: 58px;
+  align-items: center;
+}
+
+#nav-input {
+  display: none;
+}
+
+/* header */
+.nav-pc {
+  display: flex;
+  gap: 0 38px;
+  flex: 1;
+}
+
+.nav-pc ul {
+  display: flex;
+  gap: 0 38px;
+  flex: 1;
+  margin-left: 38px;
+}
+
+.nav-pc li.nav-item {
+  list-style: none;
+  padding: 8px 20px;
+  border-radius: 10px;
+  color: var(--black);
+  font-weight: 600;
+}
+
+.nav-pc li.nav-item.active {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.nav-pc li.nav-item a {
+  color: var(--black);
+  text-decoration: none;
+}
+
+.nav-pc li.nav-item.active a {
+  color: var(--white);
+}
+
+.nav-mobile {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 320px;
+  max-width: 100%;
+  background-color: var(--white);
+  transform: translateX(-100%);
+  transition: transform linear 0.2s;
+}
+
+.nav-mobile .close-btn {
+  padding: 8px;
+  margin-left: auto;
+  width: fit-content;
+  display: block;
+}
+
+.nav-mobile .search {
+  margin-left: 20px;
+  margin-top: 18px;
+}
+
+.nav-mobile li.nav-item {
+  list-style: none;
+  color: var(--black);
+  font-weight: 600;
+  margin-top: 18px;
+  padding: 8px 20px;
+}
+
+.nav-mobile li.nav-item.active {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.nav-mobile li.nav-item a {
+  color: var(--black);
+  text-decoration: none;
+}
+
+.nav-mobile li.nav-item.active a {
+  color: var(--white);
+}
+
+.logo {
+  font-family: "Logo";
+  font-weight: 700;
+  font-size: 30px;
+}
+/* header */
+
+.nav-btn {
+  width: 28px;
+  height: 28px;
+  display: none;
+  margin-left: auto;
+}
+
+.nav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+  animation: leftToRight linear 0.2s;
+}
+
+#nav-input:checked ~ .nav-mobile {
+  transform: translateX(0);
+}
+
+#nav-input:checked ~ .nav-overlay {
+  display: block;
+}
+
+@media screen and (max-width: 1023px) {
+  .nav-pc {
+    display: none;
+  }
+
+  .nav-btn {
+    display: block;
+  }
+}
+
+@keyframes leftToRight {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}

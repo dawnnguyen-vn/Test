@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+    <style>
+        .a {
+            background-clip: padding-box;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container">
+        <div class="inner">
+            <input type="checkbox" id="nav-input" >
+            <div class="logo">Nav Logo</div>
+            <div class="nav-pc">
+                <ul>
+                    <li class="nav-item active"><a href="#">New</a></li>
+                    <li class="nav-item"><a href="#">Technology</a></li>
+                    <li class="nav-item"><a href="#">Teamwork</a></li>
+                    <li class="nav-item"><a href="#">Human Skill</a></li>
+                </ul>
+                <div class="search">
+                    <img src="./search.svg" alt="">
+                </div>
+            </div>
+            <label for="nav-input" class="nav-btn">
+                <img src="./bars.svg" alt="">
+            </label>
+            <label for="nav-input" class="nav-overlay"></label>
+            <div class="nav-mobile">
+                <label for="nav-input" class="close-btn">
+                    <img width="28px" height="28px" src="./times.svg" alt="">
+                </label>
+                <ul>
+                    <li class="nav-item active"><a href="#">New</a></li>
+                    <li class="nav-item"><a href="#">Technology</a></li>
+                    <li class="nav-item"><a href="#">Teamwork</a></li>
+                    <li class="nav-item"><a href="#">Human Skill</a></li>
+                </ul>
+                <div class="search">
+                    <img src="./search.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div style="background-color: yellow;" class="col-l-3 a col-s-6" >A</div>
+            <div style="background-color: yellow;" class="col-l-3 a col-s-6">B</div>
+            <div style="background-color: yellow;" class="col-l-3 a col-s-6">C</div>
+            <div style="background-color: yellow;"class="col-l-3 a col-s-6">A</div>
+        </div>
+    </div>
+</body>
+
+</html>
